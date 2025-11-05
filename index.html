@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volaris - Vuelos baratos a México</title>
+    <link rel="stylesheet" href="volaris.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header class="encabezado">
+        <div class="contenedor">
+            <div class="contenido-encabezado">
+                <div class="marca">
+                    <span class="texto-marca">volaris</span>
+                    <img class="icono-marca" src="https://www.volaris.com/assets/icons/icon-152.png" alt="Logo Plus">
+                </div>
+
+                <div class="derecha-encabezado">
+                    <div class="idioma-moneda">English / $ USD</div>
+                    <button class="btn-registro">Sign up</button>
+                    <button class="btn-iniciar">Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navegacion">
+        <div class="contenedor">
+            <div class="contenedor-nav">
+                <ul class="lista-nav">
+                    <li class="item-nav activo">Flights</li>
+                    <li class="item-nav">Packages</li>
+                    <li class="item-nav">My trips</li>
+                    <li class="item-nav">Flight Status</li>
+                </ul>
+                <ul class="lista-nav-derecha">
+                    <li class="item-nav">Travel guide</li>
+                    <li class="item-nav">altitude</li>
+                    <li class="item-nav">Destinations</li>
+                    <li class="item-nav">Promotions</li>
+                    <li class="item-nav">Privacy</li>
+                    <li class="item-nav">Contact</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+<section class="hero">
+    <div class="contenido-hero">
+        <div class="caja-busqueda">
+            <div class="tipo-viaje">
+                <button class="btn-viaje activo">Round Trip</button>
+                <button class="btn-viaje">One way</button>
+            </div>
+
+            <div class="formulario-busqueda">
+                <div class="fila-destinos">
+                    <div class="grupo-form grupo-origen">
+                        <div class="contenedor-input">
+                            <label>Origin</label>
+                            <input type="text" value="Mexico City (All ..." readonly>
+                        </div>
+                    </div>
+                    <div class="icono-intercambio">⇄</div>
+                    <div class="grupo-form grupo-destino">
+                        <div class="contenedor-input">
+                            <label>- - -</label>
+                            <input type="text" placeholder="Select your destination" readonly>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fila-form">
+                    <div class="grupo-form">
+                        <label>Departure</label>
+                        <input type="date" value="2025-11-02">
+                    </div>
+                    <div class="grupo-form">
+                        <label>Return</label>
+                        <input type="date" value="2025-11-05">
+                    </div>
+                </div>
+
+                <div class="fila-form">
+                    <div class="grupo-form dropdown-pasajeros">
+                        <label for="toggle-pasajeros">Passengers</label>
+                        <input type="checkbox" id="toggle-pasajeros" class="toggle-dropdown">
+                        <label for="toggle-pasajeros" class="label-dropdown">
+                            <span class="display-pasajero">1 Adult</span>
+                        </label>
+
+                        <div class="selector-pasajeros">
+                            <div class="fila-pasajero">
+                                <div class="info-pasajero">
+                                    <div class="etiqueta-pasajero">Adult</div>
+                                    <div class="edad-pasajero">(13+ years)</div>
+                                </div>
+                                <div class="controles-pasajero">
+                                    <input type="number" min="1" max="9" value="1" class="input-pasajero">
+                                </div>
+                            </div>
+
+                            <div class="fila-pasajero">
+                                <div class="info-pasajero">
+                                    <div class="etiqueta-pasajero">Child</div>
+                                    <div class="edad-pasajero">(2 - 12 years)</div>
+                                </div>
+                                <div class="controles-pasajero">
+                                    <input type="number" min="0" max="9" value="0" class="input-pasajero">
+                                </div>
+                            </div>
+
+                            <div class="fila-pasajero">
+                                <div class="info-pasajero">
+                                    <div class="etiqueta-pasajero">Baby</div>
+                                    <div class="edad-pasajero">(0 - 23 months)</div>
+                                </div>
+                                <div class="controles-pasajero">
+                                    <input type="number" min="0" max="9" value="0" class="input-pasajero">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grupo-form">
+                        <label>Have a Promocode? (optional)</label>
+                        <input type="text" placeholder="">
+                    </div>
+                </div>
+
+                <div class="acciones-form">
+                <button class="btn-hotel">
+                    <i class="fa-solid fa-plane-departure" style="color: #A12885;"></i>
+                    Flight + Hotel
+                </button>
+
+                    <button class="btn-buscar">Search flights ✈</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="banner-promo">
+            <img src="https://cms.volaris.com/globalassets/startpage/fondo-ibe/4_jueves/us1_en_navidad_home-1.jpg" alt="Holiday Promotion" class="imagen-promo">
+        </div>
+    </div>
+</section>
+
+    <section class="mejores-tarifas">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">The best fares from Volaris</h2>
+
+            <div class="filtros">
+                <div class="filtro-izq">
+                    <div class="item-filtro">From: <span class="valor-filtro">Mexico City (AICM)</span></div>
+                    <div class="item-filtro">Budget</div>
+                    <button class="btn-limpiar">Clear</button>
+                </div>
+                <div class="filtro-der">
+                    <div class="item-orden">Sort: <span class="valor-orden">Popular</span></div>
+                </div>
+            </div>
+
+            <div class="contenedor-carrusel">
+                <div class="tarjetas-tarifas-wrapper">
+                <div class="tarjetas-tarifas">
+                <div class="tarjeta-tarifa">
+                    <div class="contenedor-img-tarjeta">
+                        <div class="imagen-tarjeta">
+                            <img src="https://assets.airtrfx.com/media-em/y4/volaris-cancun-01.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true" alt="Cancun">
+                        </div>
+                        <span class="contador-imagen">1/20</span>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <h3 class="destino-tarjeta">Mexico City (MEX)<br>to Cancun (CUN)</h3>
+                        <p class="fecha-tarjeta">12/01/2025</p>
+                        <p class="desde-tarjeta">From</p>
+                        <p class="precio-tarjeta">USD 51<span class="asterisco">*</span></p>
+                        <p class="info-tarjeta">Viewed: 49 minutes ago</p>
+                        <p class="info-tarjeta">One way, Economy</p>
+                        <button class="btn-reservar">Book now</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-tarifa">
+                    <div class="contenedor-img-tarjeta">
+                        <div class="imagen-tarjeta">
+                            <img src="https://assets.airtrfx.com/media-em/y4/everymundo_tij_1500x500.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true" alt="Tijuana">
+                        </div>
+                        <span class="contador-imagen">2/20</span>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <h3 class="destino-tarjeta">Mexico City (MEX)<br>to Tijuana (TIJ)</h3>
+                        <p class="fecha-tarjeta">01/28/2026</p>
+                        <p class="desde-tarjeta">From</p>
+                        <p class="precio-tarjeta">USD 66<span class="asterisco">*</span></p>
+                        <p class="info-tarjeta">Viewed: 3 hours ago</p>
+                        <p class="info-tarjeta">One way, Economy</p>
+                        <button class="btn-reservar">Book now</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-tarifa">
+                    <div class="contenedor-img-tarjeta">
+                        <div class="imagen-tarjeta">
+                            <img src="https://assets.airtrfx.com/media-em/y4/gdl_airtrfx_images_3-1_1500x500.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true" alt="Guadalajara" />
+                        </div>
+                        <span class="contador-imagen">3/20</span>
+                    </div>
+
+                    <div class="cuerpo-tarjeta">
+                        <h3 class="destino-tarjeta">Mexico City (MEX)<br>to Guadalajara (GDL)</h3>
+                        <p class="fecha-tarjeta">12/09/2025</p>
+                        <p class="desde-tarjeta">From</p>
+                        <p class="precio-tarjeta">USD 29<span class="asterisco">*</span></p>
+                        <p class="info-tarjeta">Viewed: 23 minutes ago</p>
+                        <p class="info-tarjeta">One way, Economy</p>
+                        <button class="btn-reservar">Book now</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-tarifa">
+                    <div class="contenedor-img-tarjeta">
+                        <div class="imagen-tarjeta">
+                            <img src="https://assets.airtrfx.com/media-em/y4/seo_everymundo_mty_1500x500.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true" alt="Monterrey">
+                        </div>
+                        <span class="contador-imagen">4/20</span>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <h3 class="destino-tarjeta">Mexico City (MEX)<br>to Monterrey (MTY)</h3>
+                        <p class="fecha-tarjeta">11/11/2025</p>
+                        <p class="desde-tarjeta">From</p>
+                        <p class="precio-tarjeta">USD 21<span class="asterisco">*</span></p>
+                        <p class="info-tarjeta">Viewed: an hour ago</p>
+                        <p class="info-tarjeta">One way, Economy</p>
+                        <button class="btn-reservar">Book now</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-tarifa">
+                    <div class="contenedor-img-tarjeta">
+                        <div class="imagen-tarjeta">
+                            <img src="IMAGEN_MERIDA_AQUI" alt="Merida">
+                        </div>
+                        <span class="contador-imagen">5/20</span>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <h3 class="destino-tarjeta">Mexico City (MEX)<br>to Mérida (MID)</h3>
+                        <p class="fecha-tarjeta">27/01/2026</p>
+                        <p class="desde-tarjeta">From</p>
+                        <p class="precio-tarjeta">MXN 727<span class="asterisco">*</span></p>
+                        <p class="info-tarjeta">Viewed: an hour ago</p>
+                        <p class="info-tarjeta">One way, Economy</p>
+                        <button class="btn-reservar">Book now</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-tarifa">
+                    <div class="contenedor-img-tarjeta">
+                        <div class="imagen-tarjeta">
+                            <img src="IMAGEN_LOS_CABOS_AQUI" alt="Los Cabos">
+                        </div>
+                        <span class="contador-imagen">6/20</span>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <h3 class="destino-tarjeta">Mexico City (MEX)<br>to Los Cabos (SJD)</h3>
+                        <p class="fecha-tarjeta">25/01/2026</p>
+                        <p class="desde-tarjeta">From</p>
+                        <p class="precio-tarjeta">MXN 1,064<span class="asterisco">*</span></p>
+                        <p class="info-tarjeta">Viewed: 25 minutes ago</p>
+                        <p class="info-tarjeta">One way, Economy</p>
+                        <button class="btn-reservar">Book now</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-tarifa">
+                    <div class="contenedor-img-tarjeta">
+                        <div class="imagen-tarjeta">
+                            <img src="IMAGEN_TUXTLA_AQUI" alt="Tuxtla Gutierrez">
+                        </div>
+                        <span class="contador-imagen">7/20</span>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <h3 class="destino-tarjeta">Mexico City (MEX)<br>to Tuxtla Gutierrez (TGZ)</h3>
+                        <p class="fecha-tarjeta">13/01/2026</p>
+                        <p class="desde-tarjeta">From</p>
+                        <p class="precio-tarjeta">MXN 350<span class="asterisco">*</span></p>
+                        <p class="info-tarjeta">Viewed: 5 hours ago</p>
+                        <p class="info-tarjeta">One way, Economy</p>
+                        <button class="btn-reservar">Book now</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-tarifa">
+                    <div class="contenedor-img-tarjeta">
+                        <div class="imagen-tarjeta">
+                            <img src="IMAGEN_LOS_ANGELES_AQUI" alt="Los Angeles">
+                        </div>
+                        <span class="contador-imagen">8/20</span>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <h3 class="destino-tarjeta">Mexico City (MEX)<br>to Los Angeles (LAX)</h3>
+                        <p class="fecha-tarjeta">27/01/2026</p>
+                        <p class="desde-tarjeta">From</p>
+                        <p class="precio-tarjeta">MXN 1,995<span class="asterisco">*</span></p>
+                        <p class="info-tarjeta">Viewed: 21 minutes ago</p>
+                        <p class="info-tarjeta">One way, Economy</p>
+                        <button class="btn-reservar">Book now</button>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+
+            <p class="aviso">Look on our website for the price that best suits you.*</p>
+        </div>
+    </section>
+
+
+<section class="pagos-seguros">
+  <div class="contenedor">
+    <h2 class="titulo-seccion">Secure payments</h2>
+
+    <div class="tarjeta-pago">
+      <div class="seccion-pago">
+        <h3 class="titulo-seccion-pago">Credit card, debit card and electronic payment</h3>
+        <div class="fila-logos-pago">
+          <img src="https://cms.volaris.com/globalassets/1nextgen/payments/visa.svg" alt="Visa" class="img-logo-pago">
+          <img src="https://cms.volaris.com/globalassets/1nextgen/payments/mastercard.svg" alt="Mastercard" class="img-logo-pago">
+          <img src="https://cms.volaris.com/globalassets/1nextgen/payments/amex.svg" alt="American Express" class="img-logo-pago">
+          <img src="https://cms.volaris.com/globalassets/1nextgen/payments/paypal.svg" alt="PayPal" class="img-logo-pago">
+          <img src="https://cms.volaris.com/globalassets/1nextgen/payments/invex.svg" alt="Invex" class="img-logo-pago">
+        </div>
+      </div>
+
+      <div class="seccion-pago">
+        <h3 class="titulo-seccion-pago">Pay with cash at any of the participating branches.</h3>
+        <div class="fila-logos-pago">
+          <img src="https://cms.volaris.com/globalassets/1nextgen/payments/oxxo.svg" alt="OXXO" class="img-logo-pago">
+          <img src="https://cms.volaris.com/globalassets/1nextgen/payments/seven.svg" alt="7-Eleven" class="img-logo-pago">
+          <img src="https://cms.volaris.com/globalassets/1nextgen/payments/walmart.svg" alt="Walmart" class="img-logo-pago">
+          <img src="https://cms.volaris.com/globalassets/1nextgen/payments/famahorro.svg" alt="Farmacias del Ahorro" class="img-logo-pago">
+        </div>
+      </div>
+
+      <a href="#" class="enlace-mas">See more information</a>
+    </div>
+  </div>
+</section>
+
+
+<section class="seccion-programas">
+  <div class="contenedor">
+    <div class="tarjetas-programas">
+      <div class="tarjeta-programa">
+        <div class="icono-programa">
+          <img src="https://cms.volaris.com/globalassets/1nextgen/internalproducts/altitude_img.png" alt="altitude" width="80" height="80">
+        </div>
+        <h3 class="titulo-programa">altitude</h3>
+        <p class="desc-programa">Now you can earn points for all your purchases. Fly and reach higher!</p>
+        <button class="btn-programa">Sign up now</button>
+      </div>
+
+      <div class="tarjeta-programa">
+        <div class="icono-programa">
+          <img src="https://cms.volaris.com/globalassets/1nextgen/internalproducts/paseanual_card_en.png" alt="Annual Pass" width="80" height="80">
+        </div>
+        <h3 class="titulo-programa">Annual Pass</h3>
+        <p class="desc-programa">Fly as much as you can for a year.</p>
+        <button class="btn-programa">Sign up now</button>
+      </div>
+
+      <div class="tarjeta-programa">
+        <div class="icono-programa">
+          <img src="https://cms.volaris.com/globalassets/1nextgen/internalproducts/pass_02.png" alt="v.pass" width="80" height="80">
+        </div>
+        <h3 class="titulo-programa">v.pass</h3>
+        <p class="desc-programa">A trip awaits you every month. v.pass, your flight subscription.</p>
+        <button class="btn-programa">Subscribe now</button>
+      </div>
+
+      <div class="tarjeta-programa">
+        <div class="icono-programa">
+          <img src="https://cms.volaris.com/globalassets/1nextgen/internalproducts/pass_03.nueva1.png" alt="INVEX" width="80" height="80">
+        </div>
+        <h3 class="titulo-programa">INVEX</h3>
+        <p class="desc-programa">Accumulate pesos to buy your flights, not miles or points! Plus, get free baggage and interest-free months.</p>
+        <button class="btn-programa">Request your card</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="seccion-vacaciones">
+  <div class="contenedor">
+    <div class="tarjetas-vacaciones">
+      <div class="tarjeta-vacacion">
+        <div class="vacation-icon">
+          <span class="texto-icono-vacacion">Already vacations in</span>
+        </div>
+        <h3 class="titulo-vacacion">Flight + Hotel</h3>
+        <p class="desc-vacacion">Find the best deals for your trip.</p>
+      </div>
+
+      <div class="tarjeta-vacacion">
+        <div class="icono-vacacion icono-negocio">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <h3 class="titulo-vacacion">v.business</h3>
+        <p class="desc-vacacion">The membership with special benefits for your business trips.</p>
+      </div>
+
+      <div class="tarjeta-vacacion">
+        <div class="icono-vacacion icono-grupos">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3 class="titulo-vacacion">Groups</h3>
+        <p class="desc-vacacion">Get a quote for groups of more than 9 people.</p>
+      </div>
+
+      <div class="tarjeta-vacacion">
+        <div class="icono-vacacion icono-aifa">
+          <i class="fas fa-plane"></i>
+        </div>
+        <h3 class="titulo-vacacion">AIFA Benefits</h3>
+        <p class="desc-vacacion">Get preferential pricing on highway tolls when traveling to or from Felipe Angeles Airport.</p>
+      </div>
+
+      <div class="tarjeta-vacacion">
+        <div class="icono-vacacion icono-cargo">
+          <i class="fas fa-box"></i>
+        </div>
+        <h3 class="titulo-vacacion">Cargo</h3>
+        <p class="desc-vacacion">We have cargo and courier services.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="seccion-promociones">
+  <div class="contenedor">
+    <div class="caja-promociones">
+      <div class="texto-promociones">
+        <p class="titulo-promociones">Be the first to know about our</p>
+        <h2 class="subtitulo-promociones">Promotions</h2>
+      </div>
+      <div class="form-boletin">
+        <input type="email" placeholder="Email Address" class="input-boletin">
+        <button class="btn-boletin">Subscribe!</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="columnas-pie">
+      <div class="columna-pie">
+        <h3 class="titulo-pie">Our routes</h3>
+        <ul class="enlaces-pie">
+          <li><a href="#">Flights to Aguascalientes</a></li>
+          <li><a href="#">Flights to Cancun</a></li>
+          <li><a href="#">Flights to Guatemala</a></li>
+          <li><a href="#">Flights to Culiacan</a></li>
+          <li><a href="#">Flights to Guadalajara</a></li>
+          <li><a href="#">Flights to Leon</a></li>
+          <li><a href="#">Flights to Mexico City</a></li>
+          <li><a href="#">Flights to Morelia</a></li>
+          <li><a href="#">Flights to Tijuana</a></li>
+        </ul>
+      </div>
+
+      <div class="columna-pie">
+        <h3 class="titulo-pie">Travel information and passenger rights</h3>
+        <ul class="enlaces-pie">
+          <li><a href="#">FlexiTicket</a></li>
+          <li><a href="#">Volaris INVEX Cards</a></li>
+          <li><a href="#">Rights you have when traveling with Volaris</a></li>
+          <li><a href="#">Baggage</a></li>
+          <li><a href="#">Boarding pass</a></li>
+          <li><a href="#">Flight change</a></li>
+          <li><a href="#">altitude</a></li>
+          <li><a href="#">v.club</a></li>
+        </ul>
+      </div>
+
+      <div class="columna-pie">
+        <h3 class="titulo-pie">About Volaris</h3>
+        <ul class="enlaces-pie">
+          <li><a href="#">We are the ultra-low-cost airline with flights in Mexico, United States, Central America and South America.</a></li>
+          <li><a href="#">Work with us</a></li>
+          <li><a href="#">Investor relations</a></li>
+          <li><a href="#">Corporate sustainability</a></li>
+          <li><a href="#">Press room</a></li>
+          <li><a href="#">Site map</a></li>
+        </ul>
+      </div>
+
+      <div class="columna-pie">
+        <h3 class="titulo-pie">Download our app</h3>
+        <div class="botones-app">
+          <a href="#" class="boton-app">
+            <img src="https://cms.volaris.com/globalassets/1nextgen/app/google-play-badge.png" alt="Google Play">
+          </a>
+          <a href="#" class="boton-app">
+            <img src="https://cms.volaris.com/globalassets/1nextgen/app/app-store-badge.png" alt="App Store">
+          </a>
+        </div>
+
+        <h3 class="footer-title footer-social-title">Follow us</h3>
+        <div class="iconos-social">
+          <a href="#" class="icono-social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="icono-social"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icono-social"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="icono-social"><i class="fab fa-tiktok"></i></a>
+          <a href="#" class="icono-social"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="icono-social"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
